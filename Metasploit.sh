@@ -39,10 +39,12 @@ read -p"╰───# Makky_2693 ~# " pil
 if [ $pil = 1 ]
 then
 clear
-pkg install root-repo
-pkg install unstable-repo
-pkg install x11-repo
+pkg update && pkg upgrade
+pkg install wget && pkg install curl
+pkg install ruby
+pkg install root-repo && pkg install unstable-repo && pkg install x11-repo
 pkg install metasploit
+
 fi
 
 
